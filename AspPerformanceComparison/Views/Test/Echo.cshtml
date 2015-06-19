@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "ASP.NET Counterpart to NFX.Wave Framework Performance Test - Simple Echo";
+}
+
+<h3>Enter a string to run the echo test:</h3>
+<form id="frm" action="/Backend/Echo" method="post">
+    Any string: <input type="text" name="data">
+    &nbsp;
+    <input type="submit" value="Submit">
+</form>
+
+

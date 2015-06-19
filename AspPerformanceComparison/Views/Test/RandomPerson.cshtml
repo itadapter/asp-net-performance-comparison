@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "ASP.NET Counterpart to NFX.Wave Framework Performance Test - Template Engine Test (render a Random Person)";
+}
+
+<h2>And the winner of "The Random Person of The Moment" nomination is...*</h2>
+
+<div>
+    <table>
+        <tr><td>First name: </td><td>@Model.FirstName</td></tr>
+        <tr><td>Last name: </td><td>@Model.LastName</td></tr>
+        <tr><td></td><td></td></tr>
+        <tr><td>Gender: </td><td>@Model.Gender</td></tr>
+        <tr><td>Marital status: </td><td>@Model.MaritalStatus</td></tr>
+        <tr><td></td><td></td></tr>
+        <tr><td>Age: </td><td>@Model.Age</td></tr>
+        <tr><td>Weight (kg): </td><td>@Model.Weight</td></tr>
+        <tr><td>Height (cm): </td><td>@Model.Height</td></tr>
+        <tr><td></td><td></td></tr>
+        <tr><td>Education: </td><td>@Model.Education</td></tr>
+        <tr><td>Degree: </td><td>@Model.Degree</td></tr>
+        <tr><td>Occupation: </td><td>@Model.Occupation</td></tr>
+    </table>
+</div>
+<br />
+* This is a work of fiction. Any resemblance to actual events or locales or persons is entirely coincidental. <br /><br />
