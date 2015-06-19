@@ -1,5 +1,5 @@
 # asp-net-performance-comparison
-This is an ASP.NET counterpart to <a href="https://github.com/nik-z/nfx-wave-performance-comparison/">NFX.Wave performance test application</a>. It is created to make their mutual performance comparison possible and covers a similar set of performance tests:
+This is an ASP.NET counterpart to <a href="https://github.com/nik-z/nfx-wave-performance-comparison/">NFX.Wave performance test application</a>. It is created to compare perfomance between ASP.NET and NFX.Wave in the similar set of test scenarios:
  * A simple string echo
  * A JSON packed echo responce
  * A dynamic JSON representation of data object
