@@ -4,27 +4,140 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
+    <style>
+        body {
+            font-family: Verdana, Sans-Serif;
+            font-size: 9pt;
+            width: auto;
+            padding: 0px;
+            border: none;
+            background-color: white;
+            margin: 0px;
+            color: #7a7a7a;
+            min-width: 500px;
+        }
+
+        h1, a.navbar-brand {
+            padding: 15px;
+            font-size: 28px;
+            line-height: 20px;
+            color: White;
+            display: inline;
+            margin-left: 55px;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 500;
+            text-shadow: Silver 1px 1px 3px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+
+        hr {
+            border: none;
+            width: 100%;
+            background-color: #b8b8b8;
+            height: 1px;
+        }
+
+        a {
+            outline: none;
+        }
+
+        td {
+            padding: 4px;
+        }
+
+        :link {
+            font-size: 9pt;
+            color: #3560a4;
+            text-decoration: none;
+        }
+
+            :link:hover {
+                position: relative;
+                left: 0px;
+                top: -1px;
+                color: #3560a4;
+            }
+
+        :visited {
+            font-size: 9pt;
+            text-decoration: none;
+            color: #9a2497;
+        }
+
+        #divTopPanel {
+            background-color: #222;
+            height: auto;
+        }
+
+        #divHeader {
+            width: ?[CONTENT_WIDTH];
+            height: auto;
+            background-color: #222;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8pt;
+        }
+
+        #divContentPanel {
+            background-color: #ffffff;
+            height: auto;
+        }
+
+        #divContent {
+            width: ?[CONTENT_WIDTH];
+            height: auto;
+            background-color: #ffffff;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8pt;
+        }
+
+        #divBottomPanel {
+            background-color: #ffffff;
+            height: auto;
+        }
+
+        #divBottomContent {
+            width: ?[CONTENT_WIDTH];
+            height: auto;
+            background-color: #ffffff;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8pt;
+        }
+
+        .tail {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("ASP.NET Counterpart to NFX.Wave Performance Test", "Index", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
+    <div id="divTopPanel">
+        <div id="divHeader">
+            @Html.ActionLink("ASP.NET Counterpart to NFX.Wave Performance Test", "Index", new { area = "" }, new { @class = "navbar-brand" })
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - ASP.NET Counterpart to NFX.Wave Framework Performance Test</p>
-        </footer>
+    <div id="divContentPanel">
+        <div id="divContent">
+            @RenderBody()
+        </div>
+    </div>
+    <div id="divBottomPanel">
+        <div id="divBottomContent">
+            <hr />
+            <p>@DateTime.Now - ASP.NET Counterpart to NFX.Wave Framework Performance Test</p>
+        </div>
     </div>
 </body>
 </html>
