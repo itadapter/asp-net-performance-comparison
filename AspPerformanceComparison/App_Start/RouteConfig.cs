@@ -15,7 +15,7 @@ namespace AspPerformanceComparison
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
+                url: "{action}",
                 defaults: new { controller = "Test", action = "Index", id = UrlParameter.Optional }
             );
         }
