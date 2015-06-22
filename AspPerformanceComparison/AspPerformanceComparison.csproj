@@ -167,8 +167,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Data\Femalenames.txt" />
     <Content Include="Data\Lastnames.txt" />
     <Content Include="Data\Malenames.txt" />
